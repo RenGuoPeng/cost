@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="cost.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="host" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Server=192.168.10.170;Database=shijia_costing;uid=root;password=root!@#;port=13307;</Value>
+    </Setting>
+    <Setting Name="Num" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0.000</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

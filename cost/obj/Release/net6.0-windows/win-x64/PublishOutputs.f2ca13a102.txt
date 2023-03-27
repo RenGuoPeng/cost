@@ -1,0 +1,9 @@
+D:\项目文件\cost\cost\bin\publish\appsettings.json
+D:\项目文件\cost\cost\bin\publish\D3DCompiler_47_cor3.dll
+D:\项目文件\cost\cost\bin\publish\PenImc_cor3.dll
+D:\项目文件\cost\cost\bin\publish\PresentationNative_cor3.dll
+D:\项目文件\cost\cost\bin\publish\vcruntime140_cor3.dll
+D:\项目文件\cost\cost\bin\publish\wpfgfx_cor3.dll
+D:\项目文件\cost\cost\bin\publish\Microsoft.Data.SqlClient.SNI.dll
+D:\项目文件\cost\cost\bin\publish\e_sqlite3.dll
+D:\项目文件\cost\cost\bin\publish\cost.exe

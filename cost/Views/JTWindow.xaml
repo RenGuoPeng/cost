@@ -1,0 +1,63 @@
+﻿<mah:MetroWindow x:Class="cost.Views.JtWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:cost.Views"
+        xmlns:hc="https://handyorg.github.io/handycontrol"
+        xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        Title="微型加头成本"
+                 Width="500"
+                 Height="700"
+                 FontSize="18"
+                 FontFamily="微软雅黑"
+                 FontWeight="Bold"
+        Background="{DynamicResource RegionBrush}" WindowStartupLocation="CenterScreen" VerticalAlignment="Center" HorizontalAlignment="Center" 
+        >
+    <Window.Resources>
+        <Style x:Key="NoReadOnly" TargetType="hc:NumericUpDown" BasedOn="{StaticResource NumericUpDownExtend}">
+            <Setter Property="Control.BorderThickness" Value="2,2,2,2"/>
+            <Setter Property="Control.Foreground" Value="Black"/>
+            <Setter Property="Control.BorderBrush" Value="#FF50A0FF"/>
+        </Style>
+        <Style x:Key="BorderStyle" TargetType="TextBox"  BasedOn="{StaticResource TextBoxExtend}">
+            <Setter Property="Control.BorderThickness" Value="2,2,2,2"/>
+            <!--<Setter Property="Control.Foreground" Value="Black"/>
+            <Setter Property="Control.BorderBrush" Value="#FF50A0FF"/>-->
+        </Style>
+    </Window.Resources>
+    <hc:TransitioningContentControl>
+        <hc:ScrollViewer IsInertiaEnabled="True">
+            <hc:UniformSpacingPanel Spacing="32" Margin="0" ChildWrapping="Wrap">
+                <StackPanel>
+                    <ComboBox Margin="0,0,0,0" Width="200" hc:InfoElement.Title="型号"
+                      hc:InfoElement.TitleWidth="100"  hc:DropDownElement.ConsistentWidth="False"
+                      Style="{StaticResource ComboBoxExtend}" ItemsSource="{Binding Dropproducts}" SelectedIndex="0" HorizontalAlignment="Left"
+                      VerticalAlignment="Stretch" Text="{Binding Droptext}" BorderThickness="2,2,2,2">
+
+                    </ComboBox>
+                    <TextBox Width="200" VerticalAlignment="Top" HorizontalAlignment="Left" hc:InfoElement.Placeholder="{}" hc:InfoElement.Title="连接头单价" Style="{StaticResource BorderStyle}" Text="{Binding Toucost}" hc:InfoElement.Necessary="False" Margin="0,0,0,0" IsReadOnly="True"/>
+                    <Button Content="点击计算连接头单价" HorizontalAlignment="Left" FontSize="16"  Command="{Binding BtnTou}"  Margin="5" Style="{StaticResource ButtonSuccess}"/>
+                    <TextBox Width="200" VerticalAlignment="Top" HorizontalAlignment="Left" hc:InfoElement.Placeholder="{}" hc:InfoElement.Title="测试成本" Style="{StaticResource BorderStyle}" Text="{Binding Cscost}" hc:InfoElement.Necessary="False" Margin="0,0,0,0" IsReadOnly="True"/>
+
+                </StackPanel>
+
+                <StackPanel>
+                    <TextBox Width="200" hc:InfoElement.Placeholder="" hc:TitleElement.Title="微型不加头成本" Style="{StaticResource BorderStyle}" Text="{Binding NJtcost}" hc:InfoElement.Necessary="False" IsReadOnly="True"/>
+                    <hc:NumericUpDown HorizontalAlignment="Left" VerticalAlignment="Top" ValueFormat="N2" Maximum="10000" Width="200" hc:TitleElement.TitleWidth="140" hc:InfoElement.Placeholder="" Value="{Binding Sltext}" hc:TitleElement.TitlePlacement="Top" hc:TitleElement.Title="数量" Style="{StaticResource NumericUpDownExtend}" hc:InfoElement.Necessary="False" Minimum="0" IsReadOnly="True" BorderThickness="2,2,2,2"/>
+                    <TextBox Width="200" VerticalAlignment="Top" HorizontalAlignment="Left" hc:InfoElement.Placeholder="" hc:TitleElement.Title="头数" Style="{StaticResource BorderStyle}" Text="{Binding Tstext}" hc:InfoElement.Necessary="False" IsReadOnly="True"/>
+
+                    <hc:NumericUpDown HorizontalAlignment="Left" VerticalAlignment="Top" ValueFormat="N2" Maximum="100" Value="{Binding Lvtext}" Width="200" hc:TitleElement.TitleWidth="140" hc:InfoElement.Placeholder=""  hc:TitleElement.TitlePlacement="Top" hc:TitleElement.Title="良率" Style="{StaticResource NumericUpDownExtend}" hc:InfoElement.Necessary="False" BorderThickness="2,2,2,2"/>
+
+                    <TextBox Width="200" VerticalAlignment="Top" HorizontalAlignment="Left" hc:InfoElement.Placeholder="" hc:TitleElement.Title="包装人工" Style="{StaticResource BorderStyle}" Text="{Binding Rgcost}" hc:InfoElement.Necessary="False" IsReadOnly="True"/>
+                    <TextBox Width="200" VerticalAlignment="Top" HorizontalAlignment="Left" hc:InfoElement.Placeholder="" hc:TitleElement.Title="耗材费用" Style="{StaticResource BorderStyle}" Text="{Binding Hccost}" hc:InfoElement.Necessary="False" IsReadOnly="True"/>
+                    <TextBox Width="200" VerticalAlignment="Top" HorizontalAlignment="Left" hc:InfoElement.Placeholder="" hc:TitleElement.Title="包装公摊" Style="{StaticResource BorderStyle}" Text="{Binding Gtcost}" hc:InfoElement.Necessary="False" IsReadOnly="True"/>
+
+                    <TextBox Width="200" VerticalAlignment="Top" HorizontalAlignment="Left" hc:InfoElement.Placeholder="" hc:TitleElement.Title="成本" Style="{StaticResource BorderStyle}" Text="{Binding Cbtext}" hc:InfoElement.Necessary="False"  FontWeight="Bold" SelectionBrush="{x:Null}" Foreground="Red" IsReadOnly="True"/>
+
+                </StackPanel>
+            </hc:UniformSpacingPanel>
+
+        </hc:ScrollViewer>
+    </hc:TransitioningContentControl>
+</mah:MetroWindow>

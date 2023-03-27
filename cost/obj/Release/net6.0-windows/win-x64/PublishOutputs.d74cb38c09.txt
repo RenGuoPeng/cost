@@ -1,0 +1,12 @@
+D:\桌面\升级专用\成本计算安装文件\Resources\Image\cost.ico
+D:\桌面\升级专用\成本计算安装文件\Resources\Image\低成本.png
+D:\桌面\升级专用\成本计算安装文件\appsettings.json
+D:\桌面\升级专用\成本计算安装文件\cost.dll.config
+D:\桌面\升级专用\成本计算安装文件\D3DCompiler_47_cor3.dll
+D:\桌面\升级专用\成本计算安装文件\PenImc_cor3.dll
+D:\桌面\升级专用\成本计算安装文件\PresentationNative_cor3.dll
+D:\桌面\升级专用\成本计算安装文件\vcruntime140_cor3.dll
+D:\桌面\升级专用\成本计算安装文件\wpfgfx_cor3.dll
+D:\桌面\升级专用\成本计算安装文件\Microsoft.Data.SqlClient.SNI.dll
+D:\桌面\升级专用\成本计算安装文件\e_sqlite3.dll
+D:\桌面\升级专用\成本计算安装文件\cost.exe

@@ -1,0 +1,29 @@
+﻿<Application x:Class="cost.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:cost"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!--<ResourceDictionary Source="pack://application:,,,/HandyControl;component/Themes/SkinDefault.xaml"/>-->
+                <ResourceDictionary Source="pack://application:,,,/cost;component/Resources/Themes/SkinLocal.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/HandyControl;component/Themes/Theme.xaml"/>
+
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Themes/Light.Blue.xaml" />
+                <!-- Base -->
+                <!--<ResourceDictionary Source="Resources/Style/Colors.xaml"/>
+                <ResourceDictionary Source="Resources/Style/Brush.xaml"/>
+                <ResourceDictionary Source="Resources/Style/Geometry.xaml"/>
+                <ResourceDictionary Source="Resources/Style/Style/Style.xaml"/>-->
+                <!-- Theme -->
+                <!--<ResourceDictionary Source="Resources/Style/Themes/BaseLight.xaml"/>-->
+                <!-- Primary -->
+                <ResourceDictionary Source="Resources/Style/Primary/Magenta.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <FontFamily x:Key="IconFont">pack://application:,,,/Resources/#iconfont</FontFamily>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,30 @@
+﻿<mah:MetroWindow x:Class="cost.Views.Config"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:cost.Views"
+         xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:hc="https://handyorg.github.io/handycontrol"
+        mc:Ignorable="d"
+                 ShowIconOnTitleBar="True"
+        Title="设置" Height="450" Width="800" FontSize="18" FontFamily="微软雅黑" WindowStartupLocation="CenterScreen" FontWeight="Bold" >
+    <Window.Resources>
+        <Style x:Key="NoReadOnly" TargetType="hc:NumericUpDown" BasedOn="{StaticResource NumericUpDownExtend}">
+            <Setter Property="Control.BorderThickness" Value="2,2,2,2"/>
+            <Setter Property="Control.Foreground" Value="Black"/>
+            <Setter Property="Control.BorderBrush" Value="#FF50A0FF"/>
+        </Style>
+        <Style x:Key="BorderStyle" TargetType="TextBox"  BasedOn="{StaticResource TextBoxExtend}">
+            <Setter Property="Control.BorderThickness" Value="2,2,2,2"/>
+            <!--<Setter Property="Control.Foreground" Value="Black"/>
+            <Setter Property="Control.BorderBrush" Value="#FF50A0FF"/>-->
+        </Style>
+    </Window.Resources>
+    <hc:SimpleStackPanel>
+        <TextBox Width="551" VerticalAlignment="Top" HorizontalAlignment="Left" hc:InfoElement.Placeholder="{}" hc:InfoElement.Title="数据库连接" Style="{StaticResource BorderStyle}" Text="{Binding Host}" hc:InfoElement.Necessary="False" Margin="0,15,0,0" />
+        <TextBox Width="214" VerticalAlignment="Top" HorizontalAlignment="Left" hc:InfoElement.Placeholder="{}" hc:InfoElement.Title="小数点位数" Style="{StaticResource BorderStyle}" Text="{Binding Num}" hc:InfoElement.Necessary="False" Margin="0,16,0,0" />
+        <Button x:Name="button" Content="保存" Command="{Binding BtnSave}" FontSize="16" Style="{StaticResource ButtonSuccess}" HorizontalAlignment="Left" Margin="345,184,0,0" VerticalAlignment="Top" Height="38" Width="92"/>
+
+    </hc:SimpleStackPanel>
+</mah:MetroWindow>

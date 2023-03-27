@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <RuntimeIdentifier>win10-x64</RuntimeIdentifier>//发布平台
+    <PublishSingleFile>true</PublishSingleFile>//是否单个exe
+  </PropertyGroup>
+  <PropertyGroup>
+    <PublishTrimmed>true</PublishTrimmed>//启用压缩
+  </PropertyGroup>
+</Project>

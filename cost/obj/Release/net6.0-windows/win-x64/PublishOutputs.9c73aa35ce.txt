@@ -1,0 +1,11 @@
+D:\桌面\升级专用\updateFile\Resources\Image\cost.ico
+D:\桌面\升级专用\updateFile\Resources\Image\低成本.png
+D:\桌面\升级专用\updateFile\appsettings.json
+D:\桌面\升级专用\updateFile\D3DCompiler_47_cor3.dll
+D:\桌面\升级专用\updateFile\PenImc_cor3.dll
+D:\桌面\升级专用\updateFile\PresentationNative_cor3.dll
+D:\桌面\升级专用\updateFile\vcruntime140_cor3.dll
+D:\桌面\升级专用\updateFile\wpfgfx_cor3.dll
+D:\桌面\升级专用\updateFile\Microsoft.Data.SqlClient.SNI.dll
+D:\桌面\升级专用\updateFile\e_sqlite3.dll
+D:\桌面\升级专用\updateFile\cost.exe
